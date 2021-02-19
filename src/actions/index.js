@@ -7,7 +7,7 @@ export const ADD_SMURF = "ADD_SMURF"
 export const ADD_ERROR = "ADD_ERROR"
 
 export const fetchSmurfs = () => dispatch => {
-    dispatch({ type: FETCH_SMURF_LOADING });
+    dispatch({type: FETCH_SMURF_LOADING});
     axios
         .get('http://localhost:3333/smurfs')
         .then( res => {
